@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pomodoro Clock</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Pomodoro Clock">
+    <meta name="author" content="Zach Clenaghan">
+
+
+
+    <!--Bootstrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+    <!--css file-->
+    <link href="#" rel="stylesheet">
+
+    <!--fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!--Javascript file-->
+
+
+</head>
+
+<body style="background-color: black color: white">
+    <div class="container-fluid">
+        <div id="intro" class="container text-center">
+            <h1>Pomodoro Clock</h1>
+            <p></p>
+        </div>
+
+        <div class="row">
+            <span class="col-xs-3"></span>
+            <div id="interval-well" class="container text-center well col-xs-3">
+                <h2 class="text-center">Interval length</h2>
+                <div class="row text-center">
+                    <span class="col-xs-2"></span>
+                    <i class="h3 glyphicon-minus col-xs-2 text-center" onclick="decreaseByOne()"></i>
+                    <h3 id="int-length" class="text-center col-xs-4"></h3>
+                    <i class="h3 glyphicon-plus col-xs-2 text-center" onclick="increaseByOne()"></i>
+                    <span class="col-xs-2"></span>
+                </div>
+            </div>
+            <div id="pom-length well" class="container text-center well col-xs-3">
+              <h2 class="text-center">Timer length</h2>
+              <div class="row text-center">
+                  <span class="col-xs-2"></span>
+                  <i class="h3 glyphicon-minus col-xs-2 text-center" onclick="decreaseByOne()"></i>
+                  <h3 id="start-time" class="text-center col-xs-4"></h3>
+                  <i class="h3 glyphicon-plus col-xs-2 text-center" onclick="increaseByOne()"></i>
+                  <span class="col-xs-2"></span>
+              </div>
+            </div>
+            <span class="col-xs-3"></span>
+
+        </div>
+
+
+        <div id="timer-well" class="container text-center well">
+            <h2 id="timer"></h2>
+            <button class="btn btn-default" onclick="countDown">start timer</button>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+<script src="/Users/Clenners/GitHub/Pomodoro_clock/Pomodoro.js"></script>
+
+</body>
+
+
+
+    <!--jQuery-->
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!--bootstrap-->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+</html>
