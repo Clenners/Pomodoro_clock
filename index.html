@@ -43,9 +43,9 @@
                 <h2 class="text-center">Interval length</h2>
                 <div class="row text-center">
                     <span class="col-xs-2"></span>
-                    <i class="h3 glyphicon-minus col-xs-2 text-center" onclick="decreaseByOne()"></i>
+                    <i class="h3 glyphicon-minus col-xs-2 text-center" onclick="decreaseIntByOne()"></i>
                     <h3 id="int-length" class="text-center col-xs-4"></h3>
-                    <i class="h3 glyphicon-plus col-xs-2 text-center" onclick="increaseByOne()"></i>
+                    <i class="h3 glyphicon-plus col-xs-2 text-center" onclick="increaseIntByOne()"></i>
                     <span class="col-xs-2"></span>
                 </div>
             </div>
@@ -53,9 +53,9 @@
               <h2 class="text-center">Timer length</h2>
               <div class="row text-center">
                   <span class="col-xs-2"></span>
-                  <i class="h3 glyphicon-minus col-xs-2 text-center" onclick="decreaseByOne()"></i>
+                  <i class="h3 glyphicon-minus col-xs-2 text-center" onclick="decreaseStartByOne()"></i>
                   <h3 id="start-time" class="text-center col-xs-4"></h3>
-                  <i class="h3 glyphicon-plus col-xs-2 text-center" onclick="increaseByOne()"></i>
+                  <i class="h3 glyphicon-plus col-xs-2 text-center" onclick="increaseStartByOne()"></i>
                   <span class="col-xs-2"></span>
               </div>
             </div>
@@ -66,7 +66,7 @@
 
         <div id="timer-well" class="container text-center well">
             <h2 id="timer"></h2>
-            <button class="btn btn-default" onclick="countDown">start timer</button>
+            <button class="btn btn-default" onclick="setInterval(initiateTimer, 1000)">start timer</button>
         </div>
 
 
